@@ -1,0 +1,1 @@
+/met1/WRF/DATA/QFED/aux_files/shrub_from_img.nc

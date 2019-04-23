@@ -1,0 +1,21 @@
+&control
+domains           = 1,
+fire_directory    = './',
+fire_filename(1)  = 'QFED_in_FINN_format_pm10_20130822_20130823.txt',
+wrf_directory     = '/data/ctrujillo/WRF/JJCode/runs/190411_southeast_domain/WRF-Chem/test/em_real/',
+start_date        = '2013-08-22',
+end_date          = '2013-08-22',
+
+wrf2fire_map = 'co -> CO', 'no -> NO', 'so2 -> SO2','nh3 -> NH3',
+               'c2h4 -> 1.00*C2H4',
+               'ch2o -> 1.00*CH2O',
+               'ch3cho -> 1.00*CH3CHO',
+               'toluene -> 1.00*TOLUENE',
+               'c10h16 -> 1.00*C10H16',
+               'isop -> 1.00*ISOP',
+               'ole -> 1.00*OLE',
+               'par -> 1.00*PAR',
+           'oc -> OC;aerosol','pm25 -> PM25;aerosol',
+           'bc -> BC;aerosol',
+           'pm10 -> PM10;aerosol',
+/
