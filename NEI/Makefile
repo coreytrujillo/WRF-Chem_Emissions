@@ -17,4 +17,4 @@ cleanup:
 		rm -f ${OBJS} *.mod 
 
 clean:
-		rm -f core ${EXEC} ${OBJS} *.mod
+		rm -f core ${EXEC} ${OBJS} *.mod al2radm2.outp scratem*

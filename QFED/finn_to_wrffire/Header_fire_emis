@@ -1,10 +1,8 @@
 &control
-domains           = 1,
-fire_directory    = './',
-fire_filename(1)  = 'QFED_in_FINN_format_pm10_20130822_20130823.txt',
-wrf_directory     = '/data/ctrujillo/WRF/JJCode/runs/190411_southeast_domain/WRF-Chem/test/em_real/',
-start_date        = '2013-08-22',
-end_date          = '2013-08-22',
+start_date        = '2008-06-22',
+end_date          = '2008-06-23',
+fire_filename(1)  = 'QFED_in_FINN_format_pm10_20080622_20080624.txt',
+wrf_directory     = '/data/ctrujillo/WRF/JJCode/runs/190503_tests/WRF-Chem/test/em_real/',
 
 wrf2fire_map = 'co -> CO', 'no -> NO', 'so2 -> SO2','nh3 -> NH3',
                'c2h4 -> 1.00*C2H4',

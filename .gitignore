@@ -1,3 +1,9 @@
 *.exe
 *.mod
 *.o
+QFED_in_FINN_format_pm10_*.txt
+*.swp
+wrffirechemi*
+wrfem_*
+al2radm2.outp
+scratem*

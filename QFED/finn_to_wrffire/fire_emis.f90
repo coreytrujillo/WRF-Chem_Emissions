@@ -74,7 +74,7 @@
 !     control variables
 !-----------------------------------------------------------------
    integer                :: domains = 1
-   character(len=maxsize) :: fire_directory = ' '
+   character(len=maxsize) :: fire_directory = '../qfed_to_finn/'
    character(len=maxsize) :: wrf_directory = ' '
    character(len=maxsize) :: fire_filename(max_files) = ' '
    character(len=maxsize) :: srf_type_filename(ntypes) = ' '
