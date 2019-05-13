@@ -11,10 +11,11 @@
 close all
 clear
 
-date_i=[2013 08 22 0 0 0];
-date_f=[2013 08 23 0 0 0];
+% Change these!!!!!!!!!!
+date_i=[2008 06 22 0 0 0];
+date_f=[2008 06 24 0 0 0];
+path_qfed='/met1/WRF/DATA/QFED/2008/M06/';
 
-path_qfed='/met1/WRF/DATA/QFED/2013/M08/';
 spc_read_qfed={'bc','ch4','co','co2','nh3','no','oc','pm25','so2'};
 mol_weight=[0 16.04 28.01 44.01 17.03 30.01 0 0 64.07]; %g/mol
 prefix_qfed='qfed2.emis_';
@@ -23,7 +24,7 @@ sufix2_qfed='.nc4';
 var_extract={'biomass_xf','biomass_tf','biomass_sv','biomass_gl'}; %same order as in FINN
 
 dt_files=24;%in hours
-file_out_prefix='../QFED_in_FINN_format_pm10_';
+file_out_prefix='QFED_in_FINN_format_pm10_';
 %file_out_prefix='QFED_in_FINN_format_MOZART_pm10_';
 file_out_sufix='.txt';
 %geos5 0.1 center degree grid
@@ -110,7 +111,7 @@ datenum_aux=datenum(date_i);
 for j=1:Ndays_extract
  data_qfed=NaN*zeros(Nx,Ny,4,numel(spc_read_qfed));
  datenum_list(j)=datenum_aux;
- datestr_aux=[datestr(datenum_aux,'yyyymmdd')]
+ datestr_aux=[datestr(datenum_aux,'yyyymmdd')];
  index_t=1;
  for i=1:numel(spc_read_qfed)
   [names_spc data] = read_netcdf_vars_1hour([path_qfed ...
@@ -193,3 +194,5 @@ end
 
 fclose(file);
 
+disp('Successfuly Ran!')
+exit
