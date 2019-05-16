@@ -95,7 +95,7 @@
 !
 ! - Output emissions data dimensions (user specified)
 !
-     PARAMETER(IX2=99,JX2=99,KX=20,KP=KX+1)
+     PARAMETER(IX2=79,JX2=79,KX=19,KP=KX+1)
 !
 !
 ! Number of release points
@@ -186,17 +186,17 @@
 ! Following for WRF/Chem 4 km domain (Lambert Conformal), no nest, continental U.S. (Jun 2018)
      INTEGER    :: iproj = 1
      REAL       :: rekm = 6370.
-     REAL       :: dx = 4.E3
-     REAL       :: dxbigdo = 4.E3
-     REAL       :: xlatc =  33.75
-     REAL       :: xlonc = -88.75
-     REAL       :: clat1 = 60.00
-     REAL       :: clat2 = 30.00
+     REAL       :: dx = 18.E3
+     REAL       :: dxbigdo = 18.E3
+     REAL       :: xlatc =  35.00
+     REAL       :: xlonc = -90.00
+     REAL       :: clat1 = 45.00
+     REAL       :: clat2 = 31.00
      INTEGER    :: inest1 = 0
      REAL       :: xnesstr = 1.00
      REAL       :: ynesstr = 1.00
-     INTEGER    :: il = 100
-     INTEGER    :: jl = 100
+     INTEGER    :: il = 80
+     INTEGER    :: jl = 80
      INTEGER    :: starthr = 01
      INTEGER    :: maxhr = 24
      INTEGER    :: endhr 
@@ -255,12 +255,12 @@
 !
 ! Elevation at grid cell top (m)
 !
-!     DATA ZFA/    0.,   50.,  100.,  160.,  230.,  300.,  380.,  470.,  590.,  720.,             &
-!                850., 1000., 1200., 1400., 1600., 1800., 2000., 2250., 2500., 2750.              /
+     DATA ZFA/    0.,   50.,  100.,  160.,  230.,  300.,  380.,  470.,  590.,  720.,             &
+                850., 1000., 1200., 1400., 1600., 1800., 2000., 2250., 2500., 2750.              /
 
     ! from Pablo's settings for Rim fire work
-     DATA ZFA/    0.,   47.5,  95.3,  143.,  200.,  256.,  354.,  453., 553.,  653.,             &
-                806.,  1006., 1209., 1416., 1628., 1845., 2106., 2374., 2649., 2997., 3320.  /
+!     DATA ZFA/    0.,   47.5,  95.3,  143.,  200.,  256.,  354.,  453., 553.,  653.,             &
+!                806.,  1006., 1209., 1416., 1628., 1845., 2106., 2374., 2649., 2997., 3320.  /
 
      DATA REFWZ/0.,16.8,50.5,84.3,127.,170.,256.,343.,476.,610.,791., &
       883.,975.,1160.,1350.,1644.,1943.,2252.,2677.,3010.,3350./
